@@ -57,15 +57,40 @@ class Program
                 Console.WriteLine($"Number {n} is Odd");
             }
         }
-    }
 
-    static void SayHello(string name)
+
+
+
+         //Exercise 8
+        Console.WriteLine("Enter temperature in Celsius:");
+        double c = double.Parse(Console.ReadLine());
+        double f = c * 9 / 5 + 32;
+        Console.WriteLine("Temperature in Fahrenheit: " + f);
+
+        //Exercise 9
+        int a = 5;
+        int b = 10;
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+
+    //Exercise 10
+    Console.WriteLine("Enter a number:");
+    int num = int.Parse(Console.ReadLine());
+
+    for (int i = 1; i <= 10; i++)
     {
-        Console.WriteLine($"Hello, {name}!");
-    }
+        Console.WriteLine(num + " x " + i + " = " + (num * i));
 }
-        //Exercise 8
+
+    }
     
+}
+       
 
 
 
