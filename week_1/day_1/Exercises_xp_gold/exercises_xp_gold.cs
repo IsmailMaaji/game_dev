@@ -11,7 +11,7 @@ class Program
         else if (n % 5 == 0) Console.WriteLine("Buzz");
         else Console.WriteLine(n);
 
-}
+
 
 
 //Exercise : Reverse a Word 
@@ -19,3 +19,5 @@ class Program
 string w = Console.ReadLine();
 for (int i = w.Length - 1; i >= 0; i--)
     Console.Write(w[i]);
+
+}
