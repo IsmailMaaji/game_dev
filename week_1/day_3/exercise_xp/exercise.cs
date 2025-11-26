@@ -16,7 +16,7 @@
         }
         Console.WriteLine("}\n");
 
-        // ---------------- Exercise 2: Cinemax #2 ----------------
+        // Exercise 2: Cinemax 
         Console.WriteLine("Exercise 2:");
         Dictionary<string, int> family = new Dictionary<string, int>
         {
@@ -34,7 +34,7 @@
         }
         Console.WriteLine($"Total family cost: ${total}\n");
 
-        // ---------------- Exercise 3: Zara Brand Dictionary ----------------
+        // Exercise 3: Zara Brand Dictionary 
         Console.WriteLine("Exercise 3:");
         var brand = new Dictionary<string, object>
         {
@@ -68,29 +68,14 @@
         var majorColors = (Dictionary<string, List<string>>)brand["major_color"];
         Console.WriteLine($"US major colors: {string.Join(", ", majorColors["US"])}");
 
-        Console.WriteLine($"Number of key-value pairs: {brand.Count}");
-        Console.WriteLine("Keys:");
-        foreach (var key in brand.Keys) Console.WriteLine(key);
 
-        var more_on_zara = new Dictionary<string, object>
-        {
-            {"creation_date", 1975},
-            {"number_stores", 10000}
-        };
-
-        foreach (var kvp in more_on_zara)
-        {
-            brand[kvp.Key] = kvp.Value;
-        }
-        Console.WriteLine($"Number of stores after merge: {brand["number_stores"]}\n");
-
-        // ---------------- Exercise 4: Some Geography ----------------
+        //  Exercise 4: Some Geography 
         Console.WriteLine("Exercise 4:");
         DescribeCity("Reykjavik");
         DescribeCity("Paris", "France");
         Console.WriteLine();
 
-        // ---------------- Exercise 5: Random Number Guess ----------------
+        //  Exercise 5: Random Number Guess
         Console.WriteLine("Exercise 5:");
         Random rnd = new Random();
         int userNumber = 42; // For example, you can use Console.ReadLine() to get input
@@ -100,7 +85,7 @@
         else
             Console.WriteLine($"Fail! Your number: {userNumber}, Random: {randomNumber}\n");
 
-        // ---------------- Exercise 6: Personalized Shirts ----------------
+        //  Exercise 6: Personalized Shirts 
         Console.WriteLine("Exercise 6:");
         MakeShirt();
         MakeShirt("Medium");
@@ -108,7 +93,7 @@
         MakeShirt(size: "XL", text: "C# Rocks");
         Console.WriteLine();
 
-        // ---------------- Exercise 7: Temperature Advice ----------------
+        // Exercise 7: Temperature Advice 
         Console.WriteLine("Exercise 7:");
         string season = "summer"; // Example, replace with user input
         int temp = GetRandomTemp(season);
@@ -119,7 +104,7 @@
         else Console.WriteLine("It's hot, stay hydrated.");
         Console.WriteLine();
 
-        // ---------------- Exercise 8: Star Wars Quiz ----------------
+        // Exercise 8: Star Wars Quiz 
         Console.WriteLine("Exercise 8:");
         var data = new List<Dictionary<string, string>>
         {
@@ -135,7 +120,7 @@
         var wrongQuestions = new List<string>();
         foreach (var q in data)
         {
-            string userAnswer = q["answer"]; // For demo, assume correct. Use Console.ReadLine() in practice
+            string userAnswer = q["answer"]; 
             if (userAnswer == q["answer"]) correct++;
             else
             {
@@ -145,8 +130,7 @@
         }
         Console.WriteLine($"Correct: {correct}, Wrong: {wrong}\n");
 
-        // ---------------- Exercise 9: Cats ----------------
-        Console.WriteLine("Exercise 9:");
+        // Exercise 9: Cats 
         Cat cat1 = new Cat("Whiskers", 3);
         Cat cat2 = new Cat("Tom", 5);
         Cat cat3 = new Cat("Garfield", 2);
@@ -154,7 +138,7 @@
         Cat oldest = GetOldestCat(new List<Cat>{cat1, cat2, cat3});
         Console.WriteLine($"The oldest cat is {oldest.Name}, and is {oldest.Age} years old.\n");
 
-        // ---------------- Exercise 10: Dogs ----------------
+        //Exercise 10: Dogs
         Console.WriteLine("Exercise 10:");
         Dog davidsDog = new Dog("Rex", 50);
         davidsDog.Bark();
@@ -167,7 +151,7 @@
         if (davidsDog.Height > sarahsDog.Height) Console.WriteLine($"{davidsDog.Name} is taller.\n");
         else Console.WriteLine($"{sarahsDog.Name} is taller.\n");
 
-        // ---------------- Exercise 11: Who's the Song Producer ----------------
+        // Exercise 11: Who's the Song Producer 
         Console.WriteLine("Exercise 11:");
         var stairway = new Song(new List<string>{
             "There’s a lady who's sure",
@@ -177,12 +161,12 @@
         stairway.SingMeASong();
         Console.WriteLine();
 
-        // ---------------- Exercise 12: Afternoon at the Zoo ----------------
+        //  Exercise 12: Afternoon at the Zoo 
         Console.WriteLine("Exercise 12:");
         Zoo newYorkZoo = new Zoo("NY Zoo");
         newYorkZoo.AddAnimal("Lion");
         newYorkZoo.AddAnimal("Tiger");
-        newYorkZoo.AddAnimal("Lion"); // duplicate, should not be added
+        newYorkZoo.AddAnimal("Lion"); 
         newYorkZoo.GetAnimals();
         newYorkZoo.SellAnimal("Tiger");
         newYorkZoo.GetAnimals();
@@ -191,7 +175,7 @@
         newYorkZoo.GetGroups();
     }
 
-    // ---------------- Exercise 9 Classes ----------------
+    //  Exercise 9 Classes 
     class Cat
     {
         public string Name;
@@ -213,7 +197,7 @@
         return oldest;
     }
 
-    // ---------------- Exercise 10 Classes ----------------
+    //Exercise 10 Classes 
     class Dog
     {
         public string Name;
@@ -235,7 +219,7 @@
         }
     }
 
-    // ---------------- Exercise 11 Classes ----------------
+    // Exercise 11 Classes 
     class Song
     {
         private List<string> lyrics;
@@ -253,7 +237,7 @@
         }
     }
 
-    // ---------------- Exercise 12 Classes ----------------
+    // Exercise 12 Classes
     class Zoo
     {
         private List<string> animals;
