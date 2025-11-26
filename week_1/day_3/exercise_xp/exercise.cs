@@ -78,7 +78,7 @@
         //  Exercise 5: Random Number Guess
         Console.WriteLine("Exercise 5:");
         Random rnd = new Random();
-        int userNumber = 42; // For example, you can use Console.ReadLine() to get input
+        int userNumber = 42; 
         int randomNumber = rnd.Next(1, 101);
         if (userNumber == randomNumber)
             Console.WriteLine($"Success! Both numbers are {randomNumber}");

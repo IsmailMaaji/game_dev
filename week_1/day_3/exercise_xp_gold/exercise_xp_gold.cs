@@ -61,4 +61,14 @@ Dictionary<string, string> birthdays = new Dictionary<string, string>()
             int n4 = int.Parse(s+s+s+s);
 
             Console.WriteLine(n1 + n2 + n3 + n4);
-                    
+
+
+     // Exercise 4: Double Dice
+
+     class Program
+{
+  static void ThrowDice() 
+  {
+    
+  }
+}
