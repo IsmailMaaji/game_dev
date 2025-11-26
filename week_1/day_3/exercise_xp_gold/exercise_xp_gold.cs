@@ -49,6 +49,16 @@ Dictionary<string, string> birthdays = new Dictionary<string, string>()
 
         //Exercise 3 : Sum Sequence
         
-        Console.Write("Enter a number X: ");
-        int x = Convert.ToInt32(Console.ReadLine());
-        
+        Console.WriteLine("Enter a number");
+
+            String s = Console.ReadLine();
+
+
+
+            int n1 = int.Parse(s);
+            int n2 = int.Parse(s+s);
+            int n3 = int.Parse(s+s+s);
+            int n4 = int.Parse(s+s+s+s);
+
+            Console.WriteLine(n1 + n2 + n3 + n4);
+                    
