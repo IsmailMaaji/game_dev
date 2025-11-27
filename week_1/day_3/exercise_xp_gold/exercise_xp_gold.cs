@@ -65,7 +65,7 @@ Dictionary<string, string> birthdays = new Dictionary<string, string>()
 
      // Exercise 4: Double Dice
 
-     class Program
+
 {
   static void ThrowDice() 
   {
