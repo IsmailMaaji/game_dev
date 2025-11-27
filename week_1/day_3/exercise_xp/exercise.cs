@@ -1,4 +1,5 @@
-    Console.WriteLine("Exercise 1:");
+    // Exercise 1: Convert Lists into Dictionaries
+        Console.WriteLine("Exercise 1:");
         List<string> keys = new List<string> { "Ten", "Twenty", "Thirty" };
         List<int> values = new List<int> { 10, 20, 30 };
         Dictionary<string, int> myDict = new Dictionary<string, int>();
@@ -140,7 +141,7 @@
         Console.WriteLine($"Correct: {correct}, Wrong: {wrong}\n");
 
      // Exercise 9: Cats 
-        public string Cat(string name, string age)
+        public Cat(string name, string age)
         {
             catName = name;
             catAge = age;
@@ -176,8 +177,6 @@
                     Dog sarahsDog = new Dog("Teacup", 20);
                         sarahsDog.Bark();
                         sarahsDog.Jump();
-                if (davidsDog.Height > sarahsDog.Height) Console.WriteLine($"{davidsDog.Name} is taller.\n");
-                else Console.WriteLine($"{sarahsDog.Name} is taller.\n");
             }
 
     // Exercise 11: Who’s the Song Producer? 

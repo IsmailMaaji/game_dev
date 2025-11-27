@@ -69,6 +69,20 @@ Dictionary<string, string> birthdays = new Dictionary<string, string>()
 {
   static void ThrowDice() 
   {
-    
+    Random rng = new Random();
+    static int ThrowDice()
+    {
+        return rng.Next(1, 7);
+    }
+    // Katla7 100 mara
+    static void MainSimulation()
+    {
+        List<int> results = new List<int>();
+
+        for (int i = 0; i < 100; i++)
+        {
+            results.Add(ThrowUntilDoubles());
+        }
+
   }
 }
