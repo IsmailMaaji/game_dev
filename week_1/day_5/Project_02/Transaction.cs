@@ -2,10 +2,10 @@ using System;
 
 class Transaction
 {
-    public Guid ID { get; private set; } // unique identifier
+    public Guid ID { get; private set; } 
     public string Title { get; set; }
-    public decimal Amount { get; set; } // positive or negative
-    public string Category { get; set; } // income or expense category
+    public decimal Amount { get; set; } 
+    public string Category { get; set; } 
     public DateTime Date { get; set; }
 
     public Transaction(string title, decimal amount, string category, DateTime date)
