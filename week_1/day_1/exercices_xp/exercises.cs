@@ -41,9 +41,13 @@ class Program
         Console.WriteLine("Liftoff!");
 
         //Exercise 6
+         static void SayHello(string name)
+    {
         SayHello("Yassine");
         SayHello("Ahmed");
         SayHello("Ayoub");
+    }
+        Console.WriteLine("Hello, " + name + "!");
 
         //Exercise 7
         for (int n = 1; n <= 10; n++)
