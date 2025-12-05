@@ -4,7 +4,7 @@ class Transaction
 {
     public Guid ID { get; private set; } 
     public string Title { get; set; }
-    public decimal Amount { get; set; } 
+    public decimal Amount { get; set; }     
     public string Category { get; set; } 
     public DateTime Date { get; set; }
 
