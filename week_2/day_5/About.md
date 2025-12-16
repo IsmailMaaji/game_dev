@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Design Document</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-        h1, h2, h3 { color: #2c3e50; }
-        hr { border: 0; border-top: 1px solid #ccc; margin: 20px 0; }
-        ul { list-style-type: disc; margin-left: 20px; }
-        strong { color: #e74c3c; }
-    </style>
-</head>
+
 <body>
 
 <h1>Game Design Document</h1>
